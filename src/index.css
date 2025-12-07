@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme { /* Tailwind CSS v4 Theme Configuration */
-  --font-sans: "Inter", sans-serif;
+  --font-sans: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   
   /* Map CSS variables to Tailwind colors */
   --color-bg-primary: var(--bg-primary);
