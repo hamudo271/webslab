@@ -1,0 +1,295 @@
+/* Home Page Styles */
+.home {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, #222 0%, #000 70%);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 8vw;
+  font-weight: 800;
+  letter-spacing: -2px;
+  line-height: 1;
+  margin-bottom: 20px;
+  background: linear-gradient(to bottom, #fff, #888);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-content p {
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #888;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.scroll-indicator span {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #666;
+}
+
+.scroll-indicator .line {
+  width: 1px;
+  height: 60px;
+  background: linear-gradient(to bottom, #666, transparent);
+}
+
+/* Section Common */
+.section {
+  padding: 160px 0;
+  background-color: #000;
+}
+
+.section-header {
+  margin-bottom: 80px;
+}
+
+.section-header span {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #666;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.section-header h2 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+}
+
+/* About Section */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.about-content p {
+  font-size: 24px;
+  color: #ccc;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.btn-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+  width: fit-content;
+}
+
+/* Services Section */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.service-card {
+  padding: 40px;
+  border: 1px solid #222;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  border-color: #fff;
+  background-color: #111;
+}
+
+.service-card svg {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.service-card h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.service-card p {
+  color: #888;
+  line-height: 1.6;
+}
+
+/* Portfolio Section */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.portfolio-item {
+  position: relative;
+  aspect-ratio: 16/9;
+  background-color: #111;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.portfolio-thumb {
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+  transition: transform 0.5s ease;
+}
+
+.portfolio-item:hover .portfolio-thumb {
+  transform: scale(1.05);
+}
+
+.portfolio-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-info {
+  opacity: 1;
+}
+
+.portfolio-info h3 {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.portfolio-info p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.center-btn {
+  text-align: center;
+}
+
+.btn-outline {
+  display: inline-block;
+  padding: 15px 40px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Contact Banner */
+.contact-banner {
+  padding: 120px 0;
+  text-align: center;
+  background-color: #111;
+}
+
+.contact-banner h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.contact-banner p {
+  font-size: 18px;
+  color: #888;
+  margin-bottom: 40px;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 15px 40px;
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  transition: transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .hero-content h1 {
+    font-size: 12vw;
+  }
+  
+  .section-header h2 {
+    font-size: 40px;
+  }
+  
+  .services-grid, .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .services-grid, .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .section {
+    padding: 100px 0;
+  }
+}
